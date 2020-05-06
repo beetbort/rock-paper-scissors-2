@@ -1,0 +1,16 @@
+body { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scores { 
+    display: flex;
+    flex-direction: row;
+}
+
+.player-score, .computer-score { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
