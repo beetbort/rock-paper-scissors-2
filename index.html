@@ -3,28 +3,32 @@
     <head>
         <title>Rock, Paper, Scissors</title>
         <meta charset="UTF-8"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css"> 
     </head>
     <body>
-        <h1>Rock, Paper, Scissors</h1>
-        <div class="scores">
-            <div class="player-score">
-                <p>YOU</p>
-                <div>0</div>
+        <main>
+            <h1>Rock, Paper, Scissors</h1>
+            <div class="scoreboard">
+                <div class="score-card">
+                    <p>YOU</p>
+                    <div id="player-score">0</div>
+                </div>
+                <div class="score-card">
+                    <p>COMPUTER</p>
+                    <div id="computer-score">0</div>
+                </div>
             </div>
-            <div class="computer-score">
-                <p>COMPUTER</p>
-                <div>0</div>
+            <p id="message">Message goes here.</p>
+            <div class="buttons">
+                <button id="rock">ROCK</button>
+                <button id="paper">PAPER</button>
+                <button id="scissors">SCISSORS</button>
             </div>
-        </div>
-        <div>
-            <p>Message goes here.</p>
-        </div>
-        <div class="buttons">
-            <button>Rock</button>
-            <button>Paper</button>
-            <button>Scissors</button>
-        </div>
+        </main>
+        <footer id="footer">
+            <a href="https://www.vecteezy.com/free-vector/rock-paper-scissors">Rock Paper Scissors Vectors by Vecteezy</a>
+        </footer> 
         <script src="script.js"></script> 
     </body> 
 </html> 
