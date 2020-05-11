@@ -91,6 +91,13 @@ footer a {
    
 }
 
+.again { 
+    height: 50px; 
+    padding: 0px; 
+    margin-bottom: 40px;
+
+}
+
 #player-score, #computer-score { 
     font-size: 100px; 
 }

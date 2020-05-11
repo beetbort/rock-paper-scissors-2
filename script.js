@@ -12,8 +12,6 @@ function playRound() {
     let computerScore = document.querySelector("#computer-score"); 
     const playerScoreVal = parseInt(playerScore.textContent, 10);
     const computerScoreVal = parseInt(computerScore.textContent, 10); 
- 
-    console.log("clicked"); 
 
     if (playerSelection == computerSelection) { 
         message.textContent = "Tie!"; 
@@ -46,11 +44,17 @@ function playRound() {
     if (playerScore.textContent == "5" || computerScore.textContent == "5") {
         const buttonsDiv = document.querySelector(".buttons"); 
         const buttons = buttonsDiv.childNodes; 
+        const main = document.querySelector("main"); 
         buttons.forEach((button) => { 
             button.removeEventListener("click", playRound); 
         });
 
-        console.log("done!"); 
+        againButton = document.createElement("button"); 
+        againButton.classList.toggle("again");
+        againButton.textContent = "PLAY AGAIN?"
+        main.insertBefore(againButton, buttonsDiv);
+        againButton.addEventListener("click", reloadGame); 
+
         if (playerScoreVal > computerScoreVal) { 
             message.textContent = "YOU WON THE GAME!";  
 
@@ -58,6 +62,10 @@ function playRound() {
             message.textContent = "YOU LOST THE GAME."
         }
     }
+}
+
+function reloadGame() { 
+    window.location.reload(); 
 }
 
 function game() {
