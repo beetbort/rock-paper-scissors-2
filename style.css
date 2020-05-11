@@ -48,7 +48,9 @@ button {
     display: absolute;
     bottom: 0; 
     width: 100%;
-    height: 30px; 
+    height: 25px; 
+    margin-top: 30px; 
+    padding-bottom: 15px; 
 }
 
 footer a { 
@@ -88,14 +90,14 @@ footer a {
 .buttons { 
     display: flex; 
     flex-direction: row;
-   
 }
 
 .again { 
     height: 50px; 
+    width: 175px; 
     padding: 0px; 
     margin-bottom: 40px;
-
+    font-size: 14px;
 }
 
 #player-score, #computer-score { 

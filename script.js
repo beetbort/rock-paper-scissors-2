@@ -74,8 +74,6 @@ function game() {
     buttons.forEach((button) => { 
         button.addEventListener("click", playRound); 
     }); 
-    
-    
 }
 
 game(); 
